@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    padding: 0%;
+    margin:0%;
+}
+#menu{
+    width: 1500px;
+    height: 800px;
+    background-color: rgb(38, 38, 102);
+    position: relative;
+}
+#submenu{
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    width: 600px;
+    height: 540px;
+}
+img{
+    width: 50%;
+    height: 540px;
+    float: left;
+}
+#item1 >span{
+    font-size: 24px;
+    margin: 100px;
+}
+span{
+    padding-top: 25px;
+}
+input{
+    width: 45%;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+button{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 45%;
+
+}
+#hien{
+    width: 10px;
+    height: 10px;
+}
+#an{
+    display: none;
+    width: 10px;
+    height: 10px;
+}
+</style>
+<body>
+    <div id="menu">
+        <div id="submenu">
+            <div id="item">
+                <img src="https://msmobile.com.vn/upload_images/images/hinh-nen-dong-dep-cho-may-tinh-1.jpg" alt="">
+            </div>
+            <div id="item1">
+                <span>Login</span>
+                <input type="text" id="username" placeholder="username">
+                <input type="text" id="password" placeholder="password">
+                <span id="remember">
+                    <div id="hien"></div>
+                    <div id="an"></div>
+                    <div id="Num">remember me</div>
+                </span>
+                <button onclick="dangnhap">Login</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main2.js"></script>
+</body>
+</html>

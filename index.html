@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .menu span{
+        width: 100px;
+        height: 30px; 
+        background-color: red;
+        text-align: center;
+        line-height: 30px;
+        margin: 5px;
+        float: left;
+        position: relative;
+    }
+    .menu > span:hover{
+        background-color: royalblue;
+    }
+    .Num{
+        display: none;
+        position: absolute;
+    }
+    .Num li{
+        width: 100px;
+        padding-top: 0px;
+        line-height: 25px;
+    }
+    .Num li:hover{
+        background-color: yellow;
+    }
+    .menu  span:hover .Num{
+        background-color: wheat;
+        display: block;
+    }
+</style>
+<body>
+    <nav class="menu"></nav>
+    <script src="./main.js"></script>
+</body>
+</html>
